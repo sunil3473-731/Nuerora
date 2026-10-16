@@ -1,0 +1,38 @@
+﻿.table-panel {
+  max-width: none;
+  margin-top: 24px;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 12px;
+  border-bottom: 1px solid #d7e2df;
+  white-space: nowrap;
+}
+
+th {
+  color: #32484a;
+  font-size: 0.85rem;
+}
+
+td {
+  color: #203334;
+}
+
+.empty-state {
+  margin-top: 24px;
+  padding: 20px;
+  border: 1px dashed #9db4ae;
+  border-radius: 12px;
+  color: #526568;
+}
