@@ -1,0 +1,3 @@
+[submodule "hotspot-dashboard/Nuerora"]
+	path = hotspot-dashboard/Nuerora
+	url = https://github.com/sunil3473-731/Nuerora.git

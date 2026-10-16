@@ -1,0 +1,16 @@
+﻿.region-selector {
+  display: grid;
+  gap: 8px;
+  color: #32484a;
+  font-weight: 600;
+}
+
+.region-selector select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #9db4ae;
+  border-radius: 8px;
+  background: #fff;
+  color: #102a2a;
+  font: inherit;
+}
