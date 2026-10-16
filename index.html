@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Environmental Hotspot Activity Forecast</title>
+  
+  <!-- Modern Google Font: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header Section -->
+    <header class="app-header">
+      <div class="badge">Satellite Surveillance & Early Warning</div>
+      <h1>Environmental Hotspot Activity Forecast</h1>
+      <p class="explanation">
+        Track daily active-fire detections, historical baseline projections, and predictive machine-learning forecasts across high-risk ecological biomes.
+      </p>
+    </header>
+
+    <!-- Controls Form Section -->
+    <section class="controls-card">
+      <div class="control-group">
+        <label for="regionSelect">Target Region</label>
+        <select id="regionSelect">
+          <option value="amazon">Amazon Basin (South America)</option>
+          <option value="cerrado">Cerrado Biome (Brazil)</option>
+          <option value="congo">Congo Basin (Central Africa)</option>
+          <option value="borneo">Borneo Peatlands (Southeast Asia)</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <label for="forecastDate">Forecast Start Date</label>
+        <input type="date" id="forecastDate">
+      </div>
+
+      <div class="control-group action-group">
+        <button id="showForecastBtn" type="button">
+          <span class="btn-icon">⚡</span> Show Forecast
+        </button>
+      </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="resultsSection" class="results-card">
+      <div class="results-header">
+        <h2 id="forecastHeading">Forecast Data: Amazon Basin</h2>
+        <span class="status-indicator">● Active Monitoring</span>
+      </div>
+
+      <!-- Line Chart Placeholder Section -->
+      <div class="chart-wrapper">
+        <div class="chart-header">
+          <h3>Activity Trend & Projection</h3>
+          <div class="chart-legend">
+            <span class="legend-item"><span class="legend-dot actual-dot"></span> Actual</span>
+            <span class="legend-item"><span class="legend-dot baseline-dot"></span> Baseline</span>
+            <span class="legend-item"><span class="legend-dot model-dot"></span> Model</span>
+          </div>
+        </div>
+        <div id="chartContainer" class="chart-placeholder">
+          <!-- Dynamic SVG chart will be rendered by script.js -->
+        </div>
+      </div>
+
+      <!-- Data Table Section -->
+      <div class="table-wrapper">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Actual Detections</th>
+              <th>Baseline Forecast</th>
+              <th>Model Forecast</th>
+            </tr>
+          </thead>
+          <tbody id="forecastTableBody">
+            <!-- Table rows will be inserted dynamically by script.js -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <!-- External JavaScript Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
